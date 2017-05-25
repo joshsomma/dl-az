@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 16 09:04:04 2017
+Created on Tue May 23 11:29:27 2017
 
 @author: josh
 """
-
-# logistic regression
-# -------------------
 
 # import libs
 import numpy as np
@@ -30,10 +27,8 @@ sc_X = StandardScaler()
 X_train = sc_X.fit_transform(X_train)
 X_test = sc_X.transform(X_test)
 
-# fitting training set to logistic regression model
-from sklearn.linear_model import LogisticRegression
-classifier = LogisticRegression(random_state = 0)
-classifier.fit(X_train, y_train)
+# fitting training set to classifier model
+# create your classifier here
 
 # Predicting the test set results
 y_pred = classifier.predict(X_test)
